@@ -3,15 +3,17 @@
 ## Prosperity Rune (Sacrifice)[SF]
 WIP
 ## Inflação (Uno De Corno)[UC]
-Inflação é uma carta especial que pode ser usada de duas maneiras:
-1. Carta de sequência
-    - Se jogada em cima de uma sequência de mais, duplica a sequência e a passa para a próxima pessoa
-2. Carta individual
-    - Se jogada sozinha a próxima sequência de mais que for iniciada é duplicada
+Carta de Sequência
+
+Inflação pode ser usada de duas maneiras (2 MJ):
+1. Em cima de uma sequência de mais já existente
+    - Duplica a sequência
+2. Sozinha sem sequência existente
+    - Duplica a próxima sequência de mais
 ### Combos
 - Fudida / Modo fudido
-    - (Carta de sequência) A sequência é quadruplicada
-    - (Carta individual) A próxima sequência é quadruplicada
+    - (MJ1) A sequência é quadruplicada
+    - (MJ2) A próxima sequência é quadruplicada
 - Suprema
     - (Base) Todas as sequências até o fim da partida são duplicadas
     - (Não Base) Ainda não decidido
