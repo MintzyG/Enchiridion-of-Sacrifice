@@ -26,3 +26,7 @@ Ao ficar bloqueado você:
     - (Não Base) Ainda não decidido
 - Deathmatches
     - Não possui nenhum combo particular com nenhum tipo de deathmatch
+
+### Exceções
+- +2 target faz o jogador bloqueado comprar e diminui uma rodada do total bloqueado
+- DLC faz o jogador bloqueado comprar e diminui uma rodada do total bloqueado
