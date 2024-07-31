@@ -4,7 +4,7 @@
 Carta de escolha
 
 DLC pode ser jogada de duas maneiras (2 MJ):
-1. Em cima de uma sequência de mais ja existente
+1. Em cima de uma sequência de mais já existente
     - Escolha um jogador, o qual deverá comprar a sequência inteira
 2. Sozinha
     - Jogada como escolhe cor
