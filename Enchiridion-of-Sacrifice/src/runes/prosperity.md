@@ -1,14 +1,13 @@
 # Prosperity Rune(Inflação)
 
-## Prosperity Rune
+## Prosperity Rune (Sacrifice)[SF]
 WIP
-## Inflação
+## Inflação (Uno De Corno)[UC]
 Inflação é uma carta especial que pode ser usada de duas maneiras:
 1. Carta de sequência
     - Se jogada em cima de uma sequência de mais, duplica a sequência e a passa para a próxima pessoa
 2. Carta individual
     - Se jogada sozinha a próxima sequência de mais que for iniciada é duplicada
-
 ### Combos
 - Fudida / Modo fudido
     - (Carta de sequência) A sequência é quadruplicada
@@ -21,7 +20,6 @@ Inflação é uma carta especial que pode ser usada de duas maneiras:
     - (Não Base) Ainda não decidido
 - Deathmatches
     - Não possui nenhum combo particular com nenhum tipo de deathmatch
-
 ### Exceções
 - ~~Se o jogador da inflação for capitalista o efeito não será aplicado. (Isso acontece pois o capitalismo é um sistema perfeito)~~
 - ~~Se o jogador que jogar a inflação for comunista o efeito será triplicado, ou seja a sequência sextuplicada (isso acontece pois o comunismo é um sistema errado)~~
