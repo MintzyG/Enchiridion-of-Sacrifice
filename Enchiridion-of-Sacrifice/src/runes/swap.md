@@ -11,7 +11,7 @@ Escolha um jogador e troque de mãos com o mesmo
 - Suprema
     - Troque sua mão com alguém e escolha mais dois jogares para trocarem de mão entre si
 - Super Fudido
-    - Mesmo efeito da fudida
+    - Mesmo efeito da suprema
 - Deathmatches
     - (Tipo 2/3) Ao trocar de mãos ambos os jogadores involvidos morrem
 ### Exceções

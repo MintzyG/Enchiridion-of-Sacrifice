@@ -10,6 +10,8 @@ Ao ser jogada 4 rodadas(em cartas) são revertidas e as cartas devolvidas a quem
     - Volta 8 jogadas
 - Suprema
     - Reinicia o jogo
+- Super Fudido
+    - Mesmo efeito da suprema
 - Deathmatches
     - (Tipo 1/2) Os jogadores que receberem as cartas de volta morrem
 ### Exceções
