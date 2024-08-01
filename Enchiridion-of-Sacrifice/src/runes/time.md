@@ -13,7 +13,7 @@ Ao ser jogada 4 rodadas(em cartas) são revertidas e as cartas devolvidas a quem
 - Super Fudido
     - Mesmo efeito da suprema
 - Deathmatches
-    - (Tipo 1/2) Os jogadores que receberem as cartas de volta morrem
+    - (Tipo 2/3) Os jogadores que receberem as cartas de volta morrem
 ### Exceções
 - Caso back to the future seja jogada antes da quinta jogada da partida o jogo reinicia
 - Se um jogador  ganhar o jogo e o jogador seguinte tiver back to the future, ele poderá jogá-la para impedir a vitória do player anterior
