@@ -19,7 +19,6 @@
     - [Protection Rune(Escudo)](runes/protection.md)
     - [Soul Swap Rune(Trocar de Mãos)](runes/swap.md)
     - [Time Rune(Back to the Future)](runes/time.md)
-    - [Rune(Back to the Future)](runes/time.md)
     - [Draining Rune(Ladrão)](runes/draining.md)
     - [Empowering Rune(Capitalista)](runes/empowering.md)
     - [Healing Rune(Heroes Never Die)](runes/healing.md)

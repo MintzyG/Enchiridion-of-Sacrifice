@@ -1,7 +1,7 @@
 # Protection Rune(Escudo)
 ## Protection Rune (Sacrifice)[SC]
 ## Escudo (Uno de Corno)[UC]
-Carta de Escolha
+Carta de Efeito
 
 Escudo pode ser jogada de duas maneiras (2 MJ):
 1. Em cima de uma sequência de mais já existente
