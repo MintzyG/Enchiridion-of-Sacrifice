@@ -21,11 +21,14 @@ Você ainda pode ganhar como Fudido desde que você seja o único jogador vivo.
 - Jogando Foda-se e a Fudida para anular a carta (Não precisa ser feito em sua rodada)
 - Outro jogador usa Ladrão para roubar a Fudida
 - Sendo Capitalista e seu Proletariado compra a Fudida
+- Tomando Banho
 
 A Fudida permanece na sua mão caso trocarem de mão com você ou caso deathmatch (tipo 2) seja jogada, o resto das cartas que move.
 Caso você tenha apenas a Fudida você passa nenhuma carta para o jogador em questão, matando-o.
 
 ### Lista de efeitos duplicados
+Se uma carta não estiver na lista é porque seu efeito não muda
+
 - Cartas de + (Duplica o valor da carta jogada)
 - Bloquear (Bloqueia dois jogadores)
 - Inverter (Não inverte)
