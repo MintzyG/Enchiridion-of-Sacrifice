@@ -1,7 +1,7 @@
 # Empowering Rune(Capitalista)
 ## Empowering Rune (Sacrifice)[SC]
 ## Capitalista (Uno de Corno)[UC]
-Carta de escolha
+Carta de Escolha -> Efeito
 
 Ao jogar está carta você escolhe um Capitalista e um Proletariado, o mesmo jogador não pode ser escolhido para ser ambos o Capitalista e o Proletariado. Você pode escolher si mesmo para um dos dois efeitos.
 

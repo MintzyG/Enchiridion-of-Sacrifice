@@ -3,7 +3,7 @@
 ## Stasis Rune (Sacrifice)[SF]
 WIP
 ## Bloquear 48H (Uno de Corno)[UC]
-Carta de Sequência
+Carta de Sequência -> Efeito
 
 Ao ser jogada está carta oferece uma escolha ao próximo jogador, ficar bloqueado por 2 rodadas ou adicionar um block e passar a escolha para o próximo jogador como 3 rodadas. Caso você não tenha mais cartas ou escolha ficar bloqueado, você ficará bloqueado pela quantidade de rodadas que a carta acumulou.
 

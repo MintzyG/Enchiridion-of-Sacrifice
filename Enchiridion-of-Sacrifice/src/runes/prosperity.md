@@ -3,7 +3,7 @@
 ## Prosperity Rune (Sacrifice)[SF]
 WIP
 ## Inflação (Uno De Corno)[UC]
-Carta de Sequência
+Carta de Sequência -> Acontecimento
 
 Inflação pode ser usada de duas maneiras (2 MJ):
 1. Em cima de uma sequência de mais já existente

@@ -1,7 +1,7 @@
 # Time Rune(Back to the Future)
 ## Time Rune (Sacrifice)[SC]
 ## Back To The Future (Uno de Corno)[UC]
-Carta evento
+Carta de Evento
 
 Ao ser jogada 4 rodadas(em cartas) são revertidas e as cartas devolvidas a quem as jogou e revertendo eventos efeitos e acontecimentos causados entre/pelas jogadas. Alguns exemplos de reversão são Mortes, repetição de eventos, etc.
 

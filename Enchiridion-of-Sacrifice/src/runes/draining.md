@@ -1,7 +1,7 @@
 # Draining Rune(Ladrão)
 ## Draining Rune (Sacrifice)[SC]
 ## Ladrão (Uno de Corno)[UC]
-Carta de escolha
+Carta de Escolha -> Efeito
 
 Escolha um jogador e roube 4 cartas de sua escolha da mão do jogador sem ver a face das cartas.
 

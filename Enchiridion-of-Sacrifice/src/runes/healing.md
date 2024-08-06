@@ -3,7 +3,7 @@
 ## Heroes Never Die (Uno De Corno)[UC]
 Carta de Acontecimento
 
-Adicione a última carta pretas que foi jogada à sua mão.
+Adicione a última carta preta no baralho de cartas jogadas à sua mão.
 
 ### Combos
 - Fudida / Modo Fudido

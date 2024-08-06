@@ -1,7 +1,7 @@
 # Fortune Rune(DLC)
 ## Fortune Rune (Sacrifice)[SC]
 ## DLC (Uno de Corno)[UC]
-Carta de escolha
+Carta de Escolha -> Acontecimento
 
 DLC pode ser jogada de duas maneiras (2 MJ):
 1. Em cima de uma sequência de mais já existente

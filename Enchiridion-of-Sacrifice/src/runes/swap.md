@@ -1,7 +1,7 @@
 # Soul Swap Rune(Trocar de Mãos)
 ## Soul Swap Rune (Sacrifice)[SC]
 ## Trocar de Mãos (Uno de Corno)[UC]
-Carta de Escolha
+Carta de Escolha -> Acontecimento
 
 Escolha um jogador e troque de mãos com o mesmo
 
