@@ -1,0 +1,994 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Enchiridion of Sacrifice</title>
+        <meta name="robots" content="noindex">
+
+
+        <!-- Custom HTML head -->
+        
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+    </head>
+    <body class="sidebar-visible no-js">
+    <div id="body-container">
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('light')
+            html.classList.add(theme);
+            var body = document.querySelector('body');
+            body.classList.remove('no-js')
+            body.classList.add('js');
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var body = document.querySelector('body');
+            var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            body.classList.remove('sidebar-visible');
+            body.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><li class="part-title">Enchiridion of Sacrifice</li><li class="chapter-item expanded "><a href="cover.html"><strong aria-hidden="true">1.</strong> Cover</a></li><li class="chapter-item expanded affix "><li class="part-title">For Aspiring Sorcerers</li><li class="chapter-item expanded "><a href="welcome.html"><strong aria-hidden="true">2.</strong> Welcome</a></li><li class="chapter-item expanded "><a href="basics.html"><strong aria-hidden="true">3.</strong> Before you continue</a></li><li class="chapter-item expanded "><a href="rituals.html"><strong aria-hidden="true">4.</strong> Rituals for beginners</a></li><li class="chapter-item expanded "><a href="rules.html"><strong aria-hidden="true">5.</strong> Unspoken rules of rituals</a></li><li class="chapter-item expanded "><a href="winning.html"><strong aria-hidden="true">6.</strong> Successfully Sacrificing</a></li><li class="chapter-item expanded "><a href="runes/index.html"><strong aria-hidden="true">7.</strong> Ritualistic Runes</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="runes/prosperity.html"><strong aria-hidden="true">7.1.</strong> Prosperity Rune(Inflação)</a></li><li class="chapter-item expanded "><a href="runes/stasis.html"><strong aria-hidden="true">7.2.</strong> Stasis Rune(Bloquear 48)</a></li><li class="chapter-item expanded "><a href="runes/vision.html"><strong aria-hidden="true">7.3.</strong> Vision Rune(RaioX)</a></li><li class="chapter-item expanded "><a href="runes/fortune.html"><strong aria-hidden="true">7.4.</strong> Fortune Rune(DLC)</a></li><li class="chapter-item expanded "><a href="runes/protection.html"><strong aria-hidden="true">7.5.</strong> Protection Rune(Escudo)</a></li><li class="chapter-item expanded "><a href="runes/swap.html"><strong aria-hidden="true">7.6.</strong> Soul Swap Rune(Trocar de Mãos)</a></li><li class="chapter-item expanded "><a href="runes/time.html"><strong aria-hidden="true">7.7.</strong> Time Rune(Back to the Future)</a></li><li class="chapter-item expanded "><a href="runes/draining.html"><strong aria-hidden="true">7.8.</strong> Draining Rune(Ladrão)</a></li><li class="chapter-item expanded "><a href="runes/empowering.html"><strong aria-hidden="true">7.9.</strong> Empowering Rune(Capitalista)</a></li><li class="chapter-item expanded "><a href="runes/healing.html"><strong aria-hidden="true">7.10.</strong> Healing Rune(Heroes Never Die)</a></li><li class="chapter-item expanded "><a href="runes/recollection.html"><strong aria-hidden="true">7.11.</strong> Recollection Rune(Irineu)</a></li><li class="chapter-item expanded "><a href="runes/dominion.html"><strong aria-hidden="true">7.12.</strong> Dominion Rune(Deathmatch)</a></li><li class="chapter-item expanded "><a href="runes/redirection.html"><strong aria-hidden="true">7.13.</strong> Redirection Rune (Advogado)</a></li><li class="chapter-item expanded "><a href="runes/famine.html"><strong aria-hidden="true">7.14.</strong> Famine Rune (Comunista)</a></li><li class="chapter-item expanded "><a href="runes/pandemonium.html"><strong aria-hidden="true">7.15.</strong> Pandemonium Rune (Shuffle)</a></li><li class="chapter-item expanded "><a href="runes/tainted.html"><strong aria-hidden="true">7.16.</strong> Tainted Rune (Fudida)</a></li><li class="chapter-item expanded "><a href="runes/impotence.html"><strong aria-hidden="true">7.17.</strong> Impotence Rune (Racista)</a></li><li class="chapter-item expanded "><a href="runes/miracle.html"><strong aria-hidden="true">7.18.</strong> Miracle Rune (Reviver)</a></li><li class="chapter-item expanded "><a href="runes/taker.html"><strong aria-hidden="true">7.19.</strong> Soul Taker Rune (Pau no Seu CU)</a></li><li class="chapter-item expanded "><a href="runes/transmutation.html"><strong aria-hidden="true">7.20.</strong> Transmutation Rune(Suprema)</a></li><li class="chapter-item expanded "><a href="runes/impermanence.html"><strong aria-hidden="true">7.21.</strong> Impermanence Rune(Fodase)</a></li><li class="chapter-item expanded "><a href="runes/purity.html"><strong aria-hidden="true">7.22.</strong> Purity Rune(Banho)</a></li><li class="chapter-item expanded "><a href="runes/crushing.html"><strong aria-hidden="true">7.23.</strong> Crushing Rune(Incinerador)</a></li><li class="chapter-item expanded "><a href="runes/abscence.html"><strong aria-hidden="true">7.24.</strong> Absence Rune(KYS)</a></li><li class="chapter-item expanded "><a href="runes/restoration.html"><strong aria-hidden="true">7.25.</strong> Restoration Rune(Necromancer)</a></li><li class="chapter-item expanded "><a href="runes/confusion.html"><strong aria-hidden="true">7.26.</strong> Confusion Rune(Idiota)</a></li><li class="chapter-item expanded "><a href="runes/displacement.html"><strong aria-hidden="true">7.27.</strong> Displacement Rune(Viagem Espacial)</a></li></ol></li><li class="chapter-item expanded "><a href="turn.html"><strong aria-hidden="true">8.</strong> Understanding Time Dilation</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <!-- Track and set sidebar scroll position -->
+        <script>
+            var sidebarScrollbox = document.querySelector('#sidebar .sidebar-scrollbox');
+            sidebarScrollbox.addEventListener('click', function(e) {
+                if (e.target.tagName === 'A') {
+                    sessionStorage.setItem('sidebar-scroll', sidebarScrollbox.scrollTop);
+                }
+            }, { passive: true });
+            var sidebarScrollTop = sessionStorage.getItem('sidebar-scroll');
+            sessionStorage.removeItem('sidebar-scroll');
+            if (sidebarScrollTop) {
+                // preserve sidebar scroll position when navigating via links within sidebar
+                sidebarScrollbox.scrollTop = sidebarScrollTop;
+            } else {
+                // scroll sidebar to current active section when navigating via "next/previous chapter" buttons
+                var activeSection = document.querySelector('#sidebar .active');
+                if (activeSection) {
+                    activeSection.scrollIntoView({ block: 'center' });
+                }
+            }
+        </script>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Enchiridion of Sacrifice</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="cover"><a class="header" href="#cover">Cover</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><center>
+<h1 id=""><a class="header" href="#">...</a></h1>
+</center>
+<p>You caved... It means your sanity finally perished, could no longer dominate the thousand voices screaming in your head... Beggin for life, beggin to be reborn, beggin... for mercy...
+</br>
+We are merciful, after all, and could extend you a courtesy... listened to you painful cries, tears drowned in despair. Lament no more, my beautiful naive sorcerer, your soul is already binded to this book, binded to us... Reach out for us... fight for us, and we shall aid you in reaching your zenith, or perish.
+</br></p>
+<div style="break-before: page; page-break-before: always;"></div><div style="break-before: page; page-break-before: always;"></div><h1 id="rituals-for-beginners"><a class="header" href="#rituals-for-beginners">Rituals for beginners</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><center>
+<h1 id="unspoken-rules-of-rituals"><a class="header" href="#unspoken-rules-of-rituals">Unspoken rules of rituals</a></h1>
+</center>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="successfully-sacrificing"><a class="header" href="#successfully-sacrificing">Successfully Sacrificing</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="ritualistic-runes"><a class="header" href="#ritualistic-runes">Ritualistic Runes</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="prosperity-runeinflação"><a class="header" href="#prosperity-runeinflação">Prosperity Rune(Inflação)</a></h1>
+<h2 id="prosperity-rune-sacrificesf"><a class="header" href="#prosperity-rune-sacrificesf">Prosperity Rune (Sacrifice)[SF]</a></h2>
+<p>WIP</p>
+<h2 id="inflação-uno-de-cornouc"><a class="header" href="#inflação-uno-de-cornouc">Inflação (Uno De Corno)[UC]</a></h2>
+<p>Carta de Sequência -&gt; Acontecimento</p>
+<p>Inflação pode ser usada de duas maneiras (2 MJ):</p>
+<ol>
+<li>Em cima de uma sequência de mais já existente
+<ul>
+<li>Duplica a sequência</li>
+</ul>
+</li>
+<li>Sozinha sem sequência existente
+<ul>
+<li>Duplica a próxima sequência de mais</li>
+</ul>
+</li>
+</ol>
+<h3 id="combos"><a class="header" href="#combos">Combos</a></h3>
+<ul>
+<li>Fudida / Modo fudido
+<ul>
+<li>(MJ1) A sequência é quadruplicada</li>
+<li>(MJ2) A próxima sequência é quadruplicada</li>
+</ul>
+</li>
+<li>Suprema
+<ul>
+<li>(Base) Todas as sequências até o fim da partida são duplicadas</li>
+<li>(Não Base) Ainda não decidido</li>
+</ul>
+</li>
+<li>Super fudido
+<ul>
+<li>(Base) Todas as sequências até o fim da partida são octuplicadas</li>
+<li>(Não Base) Ainda não decidido</li>
+</ul>
+</li>
+<li>Deathmatches
+<ul>
+<li>Não possui nenhum combo particular com nenhum tipo de deathmatch</li>
+</ul>
+</li>
+</ul>
+<h3 id="exceções"><a class="header" href="#exceções">Exceções</a></h3>
+<ul>
+<li><del>Se o jogador da inflação for capitalista o efeito não será aplicado. (Isso acontece pois o capitalismo é um sistema perfeito)</del></li>
+<li><del>Se o jogador que jogar a inflação for comunista o efeito será triplicado, ou seja a sequência sextuplicada (isso acontece pois o comunismo é um sistema errado)</del></li>
+<li><del>Caso o jogador que jogar a inflação seja fudido e capitalista o efeito da inflação será x12</del></li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="stasis-runebloquear-48"><a class="header" href="#stasis-runebloquear-48">Stasis Rune(Bloquear 48)</a></h1>
+<h2 id="stasis-rune-sacrificesf"><a class="header" href="#stasis-rune-sacrificesf">Stasis Rune (Sacrifice)[SF]</a></h2>
+<p>WIP</p>
+<h2 id="bloquear-48h-uno-de-cornouc"><a class="header" href="#bloquear-48h-uno-de-cornouc">Bloquear 48H (Uno de Corno)[UC]</a></h2>
+<p>Carta de Sequência -&gt; Efeito</p>
+<p>Ao ser jogada está carta oferece uma escolha ao próximo jogador, ficar bloqueado por 2 rodadas ou adicionar um block e passar a escolha para o próximo jogador como 3 rodadas. Caso você não tenha mais cartas ou escolha ficar bloqueado, você ficará bloqueado pela quantidade de rodadas que a carta acumulou.</p>
+<p>A rodada em que você aceita/recebe o efeito do bloquear 48H não conta para o total de rodadas que você tem que ficar bloqueado.</p>
+<p>O efeito de bloqueado permanece na mão, logo caso troquem de mão com você a pessoa que receber sua mão ficará bloqueada por quantas rodadas restarem na sua mão, e você não estará maos bloqueado.</p>
+<p>Ao ficar bloqueado você:</p>
+<ul>
+<li>Ainda pode ser alvo de cartas de escolha como (Pau no Seu Cu, Ladrão, Etc)</li>
+<li>Não pode ser bloqueado, se um block for jogado em você sua rodada bloqueada passa normalmente e a pessoa a seguir é bloqueada</li>
+</ul>
+<h3 id="combos-1"><a class="header" href="#combos-1">Combos</a></h3>
+<ul>
+<li>Fudida / Modo Fudido
+<ul>
+<li>O valor inicial é 4 rodadas, blocks subsequentes não são vezes 2 a não ser que a pessoa seja fudida ouo jogo esteja no modo fudido</li>
+</ul>
+</li>
+<li>Suprema
+<ul>
+<li>(Base) Bloqueia todos os jogadores menos você por 3 rodadas</li>
+<li>(Não Base) Ainda não decidido</li>
+</ul>
+</li>
+<li>Super Fudido
+<ul>
+<li>(Base) Bloqueia todos os jogadores menos você por 6 rodadas</li>
+<li>(Não Base) Ainda não decidido</li>
+</ul>
+</li>
+<li>Deathmatches
+<ul>
+<li>Não possui nenhum combo particular com nenhum tipo de deathmatch</li>
+</ul>
+</li>
+</ul>
+<h3 id="exceções-1"><a class="header" href="#exceções-1">Exceções</a></h3>
+<ul>
+<li>+2 target faz o jogador bloqueado comprar e diminui uma rodada do total bloqueado</li>
+<li>DLC faz o jogador bloqueado comprar e diminui uma rodada do total bloqueado</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="vision-runeraiox"><a class="header" href="#vision-runeraiox">Vision Rune(RaioX)</a></h1>
+<h2 id="vision-rune-sacrificesf"><a class="header" href="#vision-rune-sacrificesf">Vision Rune (Sacrifice)[SF]</a></h2>
+<h2 id="raio-x-uno-de-cornouc"><a class="header" href="#raio-x-uno-de-cornouc">Raio-X (Uno de Corno)[UC]</a></h2>
+<p>Carta de Escolha -&gt; Acontecimento</p>
+<p>Escolha um jogador o qual deverá mostrar sua mão para todos os participantes da partida.
+Você é obrigado a escolher um jogador, e o jogador escolhido deve estar vivo.</p>
+<h3 id="combos-2"><a class="header" href="#combos-2">Combos</a></h3>
+<ul>
+<li>Fudida / Modo Fudido
+<ul>
+<li>Escolha dois jogadores</li>
+</ul>
+</li>
+<li>Suprema
+<ul>
+<li>O jogador escolhido deverá deixar a mão visível até morrer ou o jogo acabar</li>
+</ul>
+</li>
+<li>Super Fudido
+<ul>
+<li>Dois jogadores deveram deixar a mão visível até morrer ou o jogo acabar</li>
+</ul>
+</li>
+<li>Deathmatches
+<ul>
+<li>Não possui nenhum combo particular com nenhum tipo de deathmatch</li>
+</ul>
+</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="fortune-runedlc"><a class="header" href="#fortune-runedlc">Fortune Rune(DLC)</a></h1>
+<h2 id="fortune-rune-sacrificesc"><a class="header" href="#fortune-rune-sacrificesc">Fortune Rune (Sacrifice)[SC]</a></h2>
+<h2 id="dlc-uno-de-cornouc"><a class="header" href="#dlc-uno-de-cornouc">DLC (Uno de Corno)[UC]</a></h2>
+<p>Carta de Escolha -&gt; Acontecimento</p>
+<p>DLC pode ser jogada de duas maneiras (2 MJ):</p>
+<ol>
+<li>Em cima de uma sequência de mais já existente
+<ul>
+<li>Escolha um jogador, o qual deverá comprar a sequência inteira</li>
+</ul>
+</li>
+<li>Sozinha
+<ul>
+<li>Jogada como escolhe cor</li>
+</ul>
+</li>
+</ol>
+<h3 id="combos-3"><a class="header" href="#combos-3">Combos</a></h3>
+<ul>
+<li>Fudida / Modo Fudido
+<ul>
+<li>O jogador escolhido compra o dobro da sequência</li>
+</ul>
+</li>
+<li>Suprema
+<ul>
+<li>(Base MJ1) O jogador compra o triplo da sequência</li>
+<li>(Base MJ2) Escolhe cor supremo</li>
+<li>(Não Base) Ainda não decidido</li>
+</ul>
+</li>
+<li>Super Fudido
+<ul>
+<li>(Base) O jogador compra o sextuplo da sequência</li>
+<li>(Não Base) Ainda não decidido</li>
+</ul>
+</li>
+<li>Deathmatches
+<ul>
+<li>Não possui nenhum combo particular com nenhum tipo de deathmatch</li>
+</ul>
+</li>
+</ul>
+<h3 id="exceções-2"><a class="header" href="#exceções-2">Exceções</a></h3>
+<ul>
+<li>Só é permitido escolher jogadores vivos</li>
+<li>Escudo não bloqueia DLC</li>
+<li>Não pode ser usado para bloquear escudo</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="protection-runeescudo"><a class="header" href="#protection-runeescudo">Protection Rune(Escudo)</a></h1>
+<h2 id="protection-rune-sacrificesc"><a class="header" href="#protection-rune-sacrificesc">Protection Rune (Sacrifice)[SC]</a></h2>
+<h2 id="escudo-uno-de-cornouc"><a class="header" href="#escudo-uno-de-cornouc">Escudo (Uno de Corno)[UC]</a></h2>
+<p>Carta de Acontecimento</p>
+<p>Escudo pode ser jogada de duas maneiras (2 MJ):</p>
+<ol>
+<li>Em cima de uma sequência de mais já existente
+<ul>
+<li>Obriga o jogador que iniciou a sequência a comprá-la</li>
+</ul>
+</li>
+<li>Sozinha
+<ul>
+<li>Jogada como escolhe cor</li>
+</ul>
+</li>
+</ol>
+<h3 id="combos-4"><a class="header" href="#combos-4">Combos</a></h3>
+<ul>
+<li>Fudida / Modo Fudido
+<ul>
+<li>O jogador compra o dobro da sequência</li>
+</ul>
+</li>
+<li>Suprema
+<ul>
+<li>(Mini Foda-se) Bloqueia qualquer efeito direcionado <strong>APENAS</strong> à você (Trocar de mãos, DLC, Sequências de Mais, Bloquear 48H, Etc)</li>
+</ul>
+</li>
+<li>Super Fudido
+<ul>
+<li>Sem adições ao efeito Supremo</li>
+</ul>
+</li>
+<li>Deathmatches
+<ul>
+<li>Não possui nenhum combo particular com nenhum tipo de deathmatch</li>
+</ul>
+</li>
+</ul>
+<h3 id="exceções-3"><a class="header" href="#exceções-3">Exceções</a></h3>
+<ul>
+<li>Escudo Supremo não pode ser usado no Foda-se</li>
+<li>Se o jogador usar escudo em uma sequência começada por ele mesmo a sequência é anulada</li>
+<li>Escudo por ser combatido por outro escudo, anulando a sequência</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="soul-swap-runetrocar-de-mãos"><a class="header" href="#soul-swap-runetrocar-de-mãos">Soul Swap Rune(Trocar de Mãos)</a></h1>
+<h2 id="soul-swap-rune-sacrificesc"><a class="header" href="#soul-swap-rune-sacrificesc">Soul Swap Rune (Sacrifice)[SC]</a></h2>
+<h2 id="trocar-de-mãos-uno-de-cornouc"><a class="header" href="#trocar-de-mãos-uno-de-cornouc">Trocar de Mãos (Uno de Corno)[UC]</a></h2>
+<p>Carta de Escolha -&gt; Acontecimento</p>
+<p>Escolha um jogador e troque de mãos com o mesmo</p>
+<h3 id="combos-5"><a class="header" href="#combos-5">Combos</a></h3>
+<ul>
+<li>Fudida / Modo Fudido
+<ul>
+<li>Sem Efeito</li>
+</ul>
+</li>
+<li>Suprema
+<ul>
+<li>Troque sua mão com alguém e escolha mais dois jogares para trocarem de mão entre si</li>
+</ul>
+</li>
+<li>Super Fudido
+<ul>
+<li>Mesmo efeito da suprema</li>
+</ul>
+</li>
+<li>Deathmatches
+<ul>
+<li>(Tipo 2/3) Ao trocar de mãos ambos os jogadores involvidos morrem</li>
+</ul>
+</li>
+</ul>
+<h3 id="exceções-4"><a class="header" href="#exceções-4">Exceções</a></h3>
+<ul>
+<li>Caso trocar de mãos seja sua última carta ela pode ser jogada como escolhe cor</li>
+<li><del>Quando o jogo está em Deathmatch tipo 2 ou 3 então ela pode ser jogada como escolhe cor</del></li>
+<li><del>Trocar de mãos com um comunista mata a pessoa não comunista</del></li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="time-runeback-to-the-future"><a class="header" href="#time-runeback-to-the-future">Time Rune(Back to the Future)</a></h1>
+<h2 id="time-rune-sacrificesc"><a class="header" href="#time-rune-sacrificesc">Time Rune (Sacrifice)[SC]</a></h2>
+<h2 id="back-to-the-future-uno-de-cornouc"><a class="header" href="#back-to-the-future-uno-de-cornouc">Back To The Future (Uno de Corno)[UC]</a></h2>
+<p>Carta de Evento</p>
+<p>Ao ser jogada 4 rodadas(em cartas) são revertidas e as cartas devolvidas a quem as jogou e revertendo eventos efeitos e acontecimentos causados entre/pelas jogadas. Alguns exemplos de reversão são Mortes, repetição de eventos, etc.</p>
+<h3 id="combos-6"><a class="header" href="#combos-6">Combos</a></h3>
+<ul>
+<li>Fudida / Modo Fudido
+<ul>
+<li>Volta 8 jogadas</li>
+</ul>
+</li>
+<li>Suprema
+<ul>
+<li>Reinicia o jogo</li>
+</ul>
+</li>
+<li>Super Fudido
+<ul>
+<li>Mesmo efeito da suprema</li>
+</ul>
+</li>
+<li>Deathmatches
+<ul>
+<li>(Tipo 2/3) Os jogadores que receberem as cartas de volta morrem</li>
+</ul>
+</li>
+</ul>
+<h3 id="exceções-5"><a class="header" href="#exceções-5">Exceções</a></h3>
+<ul>
+<li>Caso back to the future seja jogada antes da quinta jogada da partida o jogo reinicia</li>
+<li>Se um jogador  ganhar o jogo e o jogador seguinte tiver back to the future, ele poderá jogá-la para impedir a vitória do player anterior</li>
+<li>Mortes revertidas pegam 7 cartas do baralho de compra ou 1 carta das recentes dado a ausência do baralho de compras. Não se pega suas cartas originais, estas ficam aonde estavam antes de Back to the Future ser jogado</li>
+<li>Efeitos não são revertidos por Back tothe Future</li>
+<li>Eventos são repetidos assim que Back to the Future devolve a carta que causou o evento</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="draining-runeladrão"><a class="header" href="#draining-runeladrão">Draining Rune(Ladrão)</a></h1>
+<h2 id="draining-rune-sacrificesc"><a class="header" href="#draining-rune-sacrificesc">Draining Rune (Sacrifice)[SC]</a></h2>
+<h2 id="ladrão-uno-de-cornouc"><a class="header" href="#ladrão-uno-de-cornouc">Ladrão (Uno de Corno)[UC]</a></h2>
+<p>Carta de Escolha -&gt; Efeito</p>
+<p>Escolha um jogador e roube 4 cartas de sua escolha da mão do jogador sem ver a face das cartas.</p>
+<h3 id="combos-7"><a class="header" href="#combos-7">Combos</a></h3>
+<ul>
+<li>Fudida / Modo Fudido
+<ul>
+<li>Roube 8 cartas</li>
+</ul>
+</li>
+<li>Suprema
+<ul>
+<li>Roube toda a mão do jogador de sua escolha</li>
+</ul>
+</li>
+<li>Super Fudido
+<ul>
+<li>Roube toda a mão de dois jogadores da sua escolha</li>
+</ul>
+</li>
+<li>Deathmatches
+<ul>
+<li>(Tipo 1/2) Você não morre ao roubar de outro jogador</li>
+</ul>
+</li>
+</ul>
+<h3 id="exceções-6"><a class="header" href="#exceções-6">Exceções</a></h3>
+<ul>
+<li>Ladrão não pode roubar a Reviver</li>
+<li>Se todas as cartas restantes de um jogador forem roubadas este jogador morre</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="empowering-runecapitalista"><a class="header" href="#empowering-runecapitalista">Empowering Rune(Capitalista)</a></h1>
+<h2 id="empowering-rune-sacrificesc"><a class="header" href="#empowering-rune-sacrificesc">Empowering Rune (Sacrifice)[SC]</a></h2>
+<h2 id="capitalista-uno-de-cornouc"><a class="header" href="#capitalista-uno-de-cornouc">Capitalista (Uno de Corno)[UC]</a></h2>
+<p>Carta de Escolha -&gt; Efeito</p>
+<p>Ao jogar está carta você escolhe um Capitalista e um Proletariado, o mesmo jogador não pode ser escolhido para ser ambos o Capitalista e o Proletariado. Você pode escolher si mesmo para um dos dois efeitos.</p>
+<p>Proletariado:
+Não compra mais do baralho de compra e sim da mão do capitalista como se ela fosse o baralho de compras.</p>
+<ul>
+<li>Pode comprar em Deathmatch (tipo 1/2)</li>
+<li>Caso o Capitalista esteja de Uno, o Proletariado fica de Deathmatch (Tipo 1) caso tipo 2 esteja ativo o Proletariado fica de Deathmatch (Tipo 2)</li>
+</ul>
+<p>Capitalista:
+Sua mão vira o baralho de compras do Proletariado.</p>
+<ul>
+<li>Não pode mais organizar a mão.</li>
+<li>Cartas compradas pelo capitalista vão atrás das cartas que já estão em sua mão.</li>
+<li>Se estiver de Uno não pode vender sua última carta</li>
+</ul>
+<h3 id="combos-8"><a class="header" href="#combos-8">Combos</a></h3>
+<ul>
+<li>Fudida / Modo Fudido
+<ul>
+<li>Pode escolher dois capitalistas e dois proletariados</li>
+</ul>
+</li>
+<li>Suprema
+<ul>
+<li>Você compra uma carta de sua escolha da mão de cada jogador presente na partida (Você pode ver a mão de todos)</li>
+</ul>
+</li>
+<li>Super Fudido
+<ul>
+<li>Mesmo efeito que a suprema porem compra duas cartas</li>
+</ul>
+</li>
+<li>Deathmatches
+<ul>
+<li>Não possui nenhum combo particular com nenhum tipo de deathmatch</li>
+</ul>
+</li>
+</ul>
+<h3 id="exceções-7"><a class="header" href="#exceções-7">Exceções</a></h3>
+<ul>
+<li>Um jogador pode ser capitalista e proletariado ao mesmo tempo caso aconteça repetição de efeito e no primeiro ele seja escolhido capitalista de alguém e na segunda seja escolhido proletariado de alguem e vice versa</li>
+<li>Caso o capitalista tenha reviver e o proletariado tenha que comprá-la ele não pode masi comprar do capitalista pois não tem como passar da reviver, logo está de deathmatch, se o capitalista comprar o proletariado pode comprar novamente até atingir a reviver novamente</li>
+<li>Se um capitalista virar comunista ele deixa de ser capitalista e seus proletariados voltam a comprar do baralho de compras</li>
+<li>Se o proletariado tiver que comprar mais cartas do que o capitalista possuí ele compra até o capitalista ficar de uno e para de comprar</li>
+<li>O efeito Comunista é sobreposto pelo efeito capitalista</li>
+<li>O efeito capitalista é sobreposto pelo efeito comunista</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="healing-runeheroes-never-die"><a class="header" href="#healing-runeheroes-never-die">Healing Rune(Heroes Never Die)</a></h1>
+<h2 id="healing-rune-sacrificesc"><a class="header" href="#healing-rune-sacrificesc">Healing Rune (Sacrifice)[SC]</a></h2>
+<h2 id="heroes-never-die-uno-de-cornouc"><a class="header" href="#heroes-never-die-uno-de-cornouc">Heroes Never Die (Uno De Corno)[UC]</a></h2>
+<p>Carta de Acontecimento</p>
+<p>Adicione a última carta preta no baralho de cartas jogadas à sua mão.</p>
+<h3 id="combos-9"><a class="header" href="#combos-9">Combos</a></h3>
+<ul>
+<li>Fudida / Modo Fudido
+<ul>
+<li>Pega as últimas duas cartas pretas</li>
+</ul>
+</li>
+<li>Suprema
+<ul>
+<li>Pegue qualquer carta preta do baralho de cartas jogadas</li>
+</ul>
+</li>
+<li>Super Fudido
+<ul>
+<li>Pegue quaisquer duas cartas pretas do baralho de cartas jogadas</li>
+</ul>
+</li>
+<li>Deathmatches
+<ul>
+<li>(Tipo 1/2) Você não morre ao pegar as cartas</li>
+</ul>
+</li>
+</ul>
+<h3 id="exceções-8"><a class="header" href="#exceções-8">Exceções</a></h3>
+<ul>
+<li>Se um jogador morrer ao usar Heroes Never Die mas a carta que ele comprar for "Foda-se" ele pode cancelar a própria morte</li>
+<li>Caso a carta seja jogada e nenhuma carta preta esteja presente você ativa "Void Reach"</li>
+</ul>
+<h3 id="alternativas"><a class="header" href="#alternativas">Alternativas</a></h3>
+<p>Void Reach</p>
+<ul>
+<li>Ganhe uma cópia de qualquer carta do baralho (uso único, não conta como carta)</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="recollection-runeirineu"><a class="header" href="#recollection-runeirineu">Recollection Rune(Irineu)</a></h1>
+<h2 id="recollection-rune-sacrificesc"><a class="header" href="#recollection-rune-sacrificesc">Recollection Rune (Sacrifice)[SC]</a></h2>
+<h2 id="irineu-uno-de-cornouc"><a class="header" href="#irineu-uno-de-cornouc">Irineu (Uno De Corno)[UC]</a></h2>
+<p>Carta de Acontecimento</p>
+<p>Repita o efeito da última carta preta jogada no baralho de cartas jogadas.</p>
+<h3 id="combos-10"><a class="header" href="#combos-10">Combos</a></h3>
+<ul>
+<li>Fudida / Modo Fudido
+<ul>
+<li>Repita o efeito das últimas duas cartas pretas</li>
+</ul>
+</li>
+<li>Suprema
+<ul>
+<li>Use uma carta especial da sua mão sem gastá-la</li>
+</ul>
+</li>
+<li>Super Fudido
+<ul>
+<li>Use Duas cartas especiais da sia mão sem gastá-las</li>
+</ul>
+</li>
+<li>Deathmatches
+<ul>
+<li>Não possui nenhum combo particular com nenhum tipo de deathmatch</li>
+</ul>
+</li>
+</ul>
+<h3 id="exceções-9"><a class="header" href="#exceções-9">Exceções</a></h3>
+<ul>
+<li>Caso Irineu seja jogada sem nenhuma carta preta no baralho de cartas jogadas ativa "God's Touch"</li>
+</ul>
+<h3 id="alternativas-1"><a class="header" href="#alternativas-1">Alternativas</a></h3>
+<p>God's Touch</p>
+<ul>
+<li>Use o efeito de qualquer carta especial na jogada</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="dominion-runedeathmatch"><a class="header" href="#dominion-runedeathmatch">Dominion Rune(Deathmatch)</a></h1>
+<h2 id="dominion-rune-sacrificesc"><a class="header" href="#dominion-rune-sacrificesc">Dominion Rune (Sacrifice)[SC]</a></h2>
+<h2 id="deathmatch-uno-de-cornouc"><a class="header" href="#deathmatch-uno-de-cornouc">Deathmatch (Uno De Corno)[UC]</a></h2>
+<p>Carta de Evento</p>
+<p>Ao jogar esta carta você ativa deathmatch tipo 2 e:</p>
+<ul>
+<li>Todos os jogadores passam sua mão para o jogador seguinte, independente de estarem vivos ou mortos assim "girando" o jogo na ordem do jogo</li>
+<li>Jogadores mortos também passam suas "Mãos"</li>
+<li>Nenhum Jogador poderá realizar compras do baralho de compras enquanto Deathmatch (Tipo 2) estiver ativa</li>
+</ul>
+<h3 id="o-que-mata"><a class="header" href="#o-que-mata">O que mata?</a></h3>
+<ul>
+<li><strong>Comprar do baralho de compras mata independente de quem seja, a não ser que você seja comunista</strong></li>
+<li>(Pau No Seu Cu) Mata todos os envolvidos</li>
+<li>(Shuffle) Mata todos os não comunistas</li>
+<li><del>Heroes never die mata o jogador</del></li>
+<li>Trocar de mãos mata os envolvidos</li>
+</ul>
+<h3 id="o-que-não-mata"><a class="header" href="#o-que-não-mata">O que não mata?</a></h3>
+<ul>
+<li>(Heroes Never die)</li>
+<li>(Ladrão)</li>
+<li>Comprar do baralho de compras sendo Comunista</li>
+<li>Comprar de um Capitalista</li>
+<li>Receber a carta da sua vitória de volta (Por Foda-se)</li>
+<li>Receber cartas da (Back to the Future) de volta não mata</li>
+</ul>
+<h3 id="combos-11"><a class="header" href="#combos-11">Combos</a></h3>
+<ul>
+<li>Fudida / Modo Fudido
+<ul>
+<li>Passe sua mão duas posições em vez de uma</li>
+</ul>
+</li>
+<li>Suprema
+<ul>
+<li>Inicia o Modo Caos</li>
+</ul>
+</li>
+<li>Super Fudido
+<ul>
+<li>Inicia o Modo Caos</li>
+</ul>
+</li>
+<li>Deathmatch
+<ul>
+<li>(Tipo 2) Cancela o deathmatch (tipo 2) mas ainda move a mão dos players</li>
+<li>(Tipo 3) Mata todos os jogadores presentes</li>
+</ul>
+</li>
+</ul>
+<h3 id="exceções-10"><a class="header" href="#exceções-10">Exceções</a></h3>
+<ul>
+<li>Se um jogador reviver em deathmatch ele renasce com apenas uma carta
+<ul>
+<li>Se disponível, do baralho de compras</li>
+<li>Caso contrário, uma aleatória do baralho de cartas jogadas</li>
+</ul>
+</li>
+<li>Se Deathmatch for sua última carta o jogador que receberá sua mão será o vencedor</li>
+<li>Ao girar o jogo, as “mãos” de jogadores mortos giram, passando sua morte a outro jogador, e recebendo as cartas do jogador anterior</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="redirection-rune-advogado"><a class="header" href="#redirection-rune-advogado">Redirection Rune (Advogado)</a></h1>
+<h2 id="redirection-rune-sacrificesc"><a class="header" href="#redirection-rune-sacrificesc">Redirection Rune (Sacrifice)[SC]</a></h2>
+<h2 id="advogado-do-diabo-uno-de-cornouc"><a class="header" href="#advogado-do-diabo-uno-de-cornouc">Advogado do Diabo (Uno de Corno)[UC]</a></h2>
+<p>Carta de Escolha -&gt; Efeito</p>
+<p>Escolha um jogador para ser o advogado e um para ser o Cliente.
+O Cliente pode gastar seu turno para mandar o Advogado comprar as cartas que o Cliente deveria comprar, desde que:</p>
+<ul>
+<li>A compra não seja por falta de cartas, ou opção
+Mas caso o Cliente deseje ele pode comprar as cartas para si mesmo.</li>
+</ul>
+<h3 id="combos-12"><a class="header" href="#combos-12">Combos</a></h3>
+<ul>
+<li>Fudida / Modo Fudido
+<ul>
+<li>Escolha dois Advogados e dois Clientes</li>
+</ul>
+</li>
+<li>Suprema
+<ul>
+<li>Escolha um Cliente e um Super Advogado (O Super Advogado é imune a morte pelo pedido Cliente apenas 1 vez)</li>
+</ul>
+</li>
+<li>Super Fudido
+<ul>
+<li>Escolha um Cliente e um Super Advogado (O Super Advogado é imune a morte pelo pedido Cliente apenas 2 vez)</li>
+</ul>
+</li>
+<li>Deathmatches
+<ul>
+<li>Não possui nenhum combo particular com nenhum tipo de deathmatch</li>
+</ul>
+</li>
+</ul>
+<h3 id="exceções-11"><a class="header" href="#exceções-11">Exceções</a></h3>
+<ul>
+<li>O mesmo jogador não pode ser escolhido para ser ambos o Advogado e o Clientes</li>
+<li>Você pode se escolher para receber um dos dois efeitos</li>
+<li>Se um jogador tiver mais de um Advogado pode escolher apenas um para comprar</li>
+<li>O mesmo jogador pode ser Cliente e Advogado caso não seja para ele mesmo
+<ul>
+<li>Ex (P1: Cliente de P2 &lt;- P2: Advogado de P1 e Cliente de P3 &lt;- P3: Advogado de P2)</li>
+</ul>
+</li>
+<li>O mesmo jogador pode ser Cliente múltiplas vezes desde que tenha advogados diferentes
+<ul>
+<li>Ex (P1: Cliente de P2 e P3 &lt;- P2: Advogado de P1 &lt;- P3: Advogado de P1)</li>
+</ul>
+</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="famine-rune-comunista"><a class="header" href="#famine-rune-comunista">Famine Rune (Comunista)</a></h1>
+<h2 id="famine-rune-sacrificesc"><a class="header" href="#famine-rune-sacrificesc">Famine Rune (Sacrifice)[SC]</a></h2>
+<h2 id="comunista-uno-de-cornouc"><a class="header" href="#comunista-uno-de-cornouc">Comunista (Uno De Corno)[UC]</a></h2>
+<p>Carta de Escolha -&gt; Efeito</p>
+<p>Escolha um jogador para virar Comunista, um Comunista, não pode mais comprar, caso compre ele morre.</p>
+<h3 id="combos-13"><a class="header" href="#combos-13">Combos</a></h3>
+<ul>
+<li>Fudida / Modo Fudido
+<ul>
+<li>Escolha dois jogadores para serem Comunistas</li>
+</ul>
+</li>
+<li>Suprema
+<ul>
+<li>A partir deste momento nenhum jogador pode comprar nenhuma carta, porém eles não morrem caso comprem
+<ul>
+<li>Caso o jogador não tenha uma jogada possível ele pula sua vez</li>
+<li>Caso nenhum jogador tenha uma jogada possível, o jogador com menos cartas ganha</li>
+<li>Caso haja um empate em quantidade de cartas o jogador que jogou mais recentemente ganha</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Super Fudido
+<ul>
+<li>Mesmo efeito da Suprema</li>
+</ul>
+</li>
+<li>Deathmatches
+<ul>
+<li>(Tipo 2) Pode comprar cartas do baralho de compras</li>
+</ul>
+</li>
+</ul>
+<h3 id="exceções-12"><a class="header" href="#exceções-12">Exceções</a></h3>
+<ul>
+<li>Caso um jogador receba o efeito Comunista duas vezes o efeito é anulado</li>
+<li>Um Proletário que vira Comunista transforma seu Capitalista em Socialista (Revolução)</li>
+<li>Caso um Capitalista vire Comunista ambos os efeitos são anulados</li>
+<li>Ao trocar de mãos com um player você da sua mão ao player e morre com a mão dele, o player que receber sua mão vira Comunista</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="pandemonium-rune-shuffle"><a class="header" href="#pandemonium-rune-shuffle">Pandemonium Rune (Shuffle)</a></h1>
+<h2 id="pandemonium-rune-sacrificesc"><a class="header" href="#pandemonium-rune-sacrificesc">Pandemonium Rune (Sacrifice)[SC]</a></h2>
+<h2 id="shufflecaust-uno-de-cornouc"><a class="header" href="#shufflecaust-uno-de-cornouc">Shufflecaust (Uno de Corno)[UC]</a></h2>
+<p>Carta de Evento</p>
+<p>Ao jogar está carta todos os jogadores juntam suas mãos em uma, quem jogou então começa a redistribuir as cartas começando pelo jogador a seguir de si, na ordem da partida até que acabe de resdistribuir as cartas, então o jogo continua.</p>
+<h3 id="combos-14"><a class="header" href="#combos-14">Combos</a></h3>
+<ul>
+<li>Fudida / Modo Fudido
+<ul>
+<li>Sem Efeitos</li>
+</ul>
+</li>
+<li>Suprema
+<ul>
+<li>As mãos dos jogadores viram o baralho de compra e o baralho de compra vira as mãos dos jogadores</li>
+</ul>
+</li>
+<li>Super Fudido
+<ul>
+<li>Mesmo efeito da Suprema</li>
+</ul>
+</li>
+<li>Deathmatches
+<ul>
+<li>(Tipo 1) Se Super Shuffle for jogado todos os jogadores morrem</li>
+<li>(Tipo 2) Mata todos os jogadores não Comuistas</li>
+<li>(Tipo 3) Mata todos os jogadores</li>
+</ul>
+</li>
+</ul>
+<h3 id="exceções-13"><a class="header" href="#exceções-13">Exceções</a></h3>
+<ul>
+<li>Se um jogador morrer por causa do Shuffle ele não recebe as cartas na redistribuição</li>
+<li>Shuffle remove todos os efeitos atribuídos às mãos dos jogadores</li>
+<li>Se (Back to the Future) reverter o Shuffle as cartas tem que ser resdistribuidas novamente</li>
+<li>A Fudida é resdistribuida no Shuffle</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="tainted-rune-fudida"><a class="header" href="#tainted-rune-fudida">Tainted Rune (Fudida)</a></h1>
+<h2 id="tainted-rune-sacrificesc"><a class="header" href="#tainted-rune-sacrificesc">Tainted Rune (Sacrifice)[SC]</a></h2>
+<h2 id="fudida-uno-de-cornosc"><a class="header" href="#fudida-uno-de-cornosc">Fudida (Uno De Corno)[SC]</a></h2>
+<p>Carta Passiva -&gt; Efeito</p>
+<p>Ao comprar está carta você não pode jogá-la exceto exceções.
+A carta também lhe da certos efeitos</p>
+<ul>
+<li>Certas interações são duplicadas</li>
+<li>Pode escolher não comprar apenas sequências de mais em qualquer deathmatch</li>
+</ul>
+<p>Se você possuir a Fudida você não poderá ganhar por faltas de cartas devido a seu efeito, visto isso, se sobrarem um Fudido e apenas um outro jogador, este outro jogador ganha automáticamente.
+Você ainda pode ganhar como Fudido desde que você seja o único jogador vivo.</p>
+<h3 id="maneiras-de-se-livrar-da-fudida"><a class="header" href="#maneiras-de-se-livrar-da-fudida">Maneiras de se livrar da Fudida</a></h3>
+<ul>
+<li>Morrendo</li>
+<li>Back to the Future reinicia a partida</li>
+<li>Shuffle</li>
+<li>Virando Racista</li>
+<li>(Sepuku) se você possuir a reviver e a Fudida você pode descartar as duas e renascer com uma nova mão</li>
+<li>Jogando a Suprema com a Fudida para ativar o Modo Fudido</li>
+<li>Jogando Foda-se e a Fudida para anular a carta (Não precisa ser feito em sua rodada)</li>
+<li>Outro jogador usa Ladrão para roubar a Fudida</li>
+<li>Sendo Capitalista e seu Proletariado compra a Fudida</li>
+<li>Tomando Banho</li>
+</ul>
+<p>A Fudida permanece na sua mão caso trocarem de mão com você ou caso deathmatch (tipo 2) seja jogada, o resto das cartas que move.
+Caso você tenha apenas a Fudida você passa nenhuma carta para o jogador em questão, matando-o.</p>
+<h3 id="lista-de-efeitos-duplicados"><a class="header" href="#lista-de-efeitos-duplicados">Lista de efeitos duplicados</a></h3>
+<p>Se uma carta não estiver na lista é porque seu efeito não muda</p>
+<ul>
+<li>Cartas de + (Duplica o valor da carta jogada)</li>
+<li>Bloquear (Bloqueia dois jogadores)</li>
+<li>Inverter (Não inverte)</li>
+<li>Inflação (Multiplica a sequência de + por 4)</li>
+<li>Bloquear 48 (Bloqueia por 4 rodadas)</li>
+<li>Raio-X (Escolha dois jogadores)</li>
+<li>DLC (O jogador compra o dobro de cartas)</li>
+<li>Escudo (O jogador compra o dobro de cartas)</li>
+<li>Back to the Future (Volta 8 jogadas)</li>
+<li>Ladrão (Roube 8 cartas)</li>
+<li>Capitalista (Escolha dois Proletarios e dois Capitalistas)</li>
+<li>Heroes never die (Compra as duas últimas cartas pretas)</li>
+<li>Irineu (Repita o efeito das duas últimas cartas pretas)</li>
+<li>Deathmatch (Gira as mãos duas posições)</li>
+<li>Advogado do diabo (Escolha dois Advogados e dois Clientes)</li>
+<li>Comunista (Escolha dois Comunistas)</li>
+<li>Racista (Escolha dois Racistas)</li>
+<li>Pau no seu cu (Escolha dois jogadores)</li>
+<li>Suprema (Super Fudido, ler a página do combo específico)</li>
+<li>Banho (Escolha dois jogadores)</li>
+<li>Incinerador (Descarte 6 cartas)</li>
+<li>KYS (O jogador fica fora da partida por 6 rodadas)</li>
+<li>Necromancer (Compre 6 cartas do cemitério)</li>
+</ul>
+<h3 id="combos-15"><a class="header" href="#combos-15">Combos</a></h3>
+<ul>
+<li>Fudida / Modo Fudido
+<ul>
+<li>N/A</li>
+</ul>
+</li>
+<li>Suprema
+<ul>
+<li>Ativa o Modo Fudido</li>
+</ul>
+</li>
+<li>Super Fudido
+<ul>
+<li>N/A</li>
+</ul>
+</li>
+<li>Deathmatches
+<ul>
+<li>(Tipo 1/2/3) Pode escolher não comprar apenas sequências de mais</li>
+</ul>
+</li>
+</ul>
+<h3 id="exceções-14"><a class="header" href="#exceções-14">Exceções</a></h3>
+<ul>
+<li>Se o fudido for comunista ele é obrigado a comprar e pode morrer ao comprar</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="impotence-rune-racista"><a class="header" href="#impotence-rune-racista">Impotence Rune (Racista)</a></h1>
+<h2 id="impotence-rune-sacrificesc"><a class="header" href="#impotence-rune-sacrificesc">Impotence Rune (Sacrifice)[SC]</a></h2>
+<h2 id="racista-uno-de-cornouc"><a class="header" href="#racista-uno-de-cornouc">Racista (Uno De Corno)[UC]</a></h2>
+<p>Carta de Escolha -&gt; Efeito</p>
+<p>Escolha um jogador para virar Racista, um Racista tem todas as suas cartas pretas até o fim da vida/partida são convertidas para escolhe cor menos a Banho.
+Novas cartas compradas também são convertidas, nota-se também que estas cartas só são escolhe cor para o Racista, caso um jogador adquira uma carta da mão do Racista está carta terá o efeito normal.</p>
+<h3 id="combos-16"><a class="header" href="#combos-16">Combos</a></h3>
+<ul>
+<li>Fudida / Modo Fudido
+<ul>
+<li>Escolha dois jogadores</li>
+</ul>
+</li>
+<li>Suprema
+<ul>
+<li>O jogador escolhido deve descartar todas as suas cartas pretas até o final da vida/partida</li>
+</ul>
+</li>
+<li>Super Fudido
+<ul>
+<li>Escolha dois jogadores para ter o efeito da Super Racista</li>
+</ul>
+</li>
+<li>Deathmatches
+<ul>
+<li>Não possui nenhum combo particular com nenhum tipo de deathmatch</li>
+</ul>
+</li>
+</ul>
+<h3 id="exceções-15"><a class="header" href="#exceções-15">Exceções</a></h3>
+<ul>
+<li>A Fudida, sendo considerada uma carta preta é afetada pela racista e deixa de ter seus efeitos</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="miracle-rune-reviver"><a class="header" href="#miracle-rune-reviver">Miracle Rune (Reviver)</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="soul-taker-rune-pau-no-seu-cu"><a class="header" href="#soul-taker-rune-pau-no-seu-cu">Soul Taker Rune (Pau no Seu CU)</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="transmutation-runesuprema"><a class="header" href="#transmutation-runesuprema">Transmutation Rune(Suprema)</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="impermanence-runefodase"><a class="header" href="#impermanence-runefodase">Impermanence Rune(Fodase)</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="purity-runebanho"><a class="header" href="#purity-runebanho">Purity Rune(Banho)</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="crushing-runeincinerador"><a class="header" href="#crushing-runeincinerador">Crushing Rune(Incinerador)</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="absence-runekys"><a class="header" href="#absence-runekys">Absence Rune(KYS)</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="restoration-runenecromancer"><a class="header" href="#restoration-runenecromancer">Restoration Rune(Necromancer)</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="confusion-runeidiota"><a class="header" href="#confusion-runeidiota">Confusion Rune(Idiota)</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="displacement-runeviagem-espacial"><a class="header" href="#displacement-runeviagem-espacial">Displacement Rune(Viagem Espacial)</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="understanding-time-dilation"><a class="header" href="#understanding-time-dilation">Understanding Time Dilation</a></h1>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="elasticlunr.min.js"></script>
+        <script src="mark.min.js"></script>
+        <script src="searcher.js"></script>
+
+        <script src="clipboard.min.js"></script>
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+        <script>
+        window.addEventListener('load', function() {
+            window.setTimeout(window.print, 100);
+        });
+        </script>
+
+    </div>
+    </body>
+</html>
